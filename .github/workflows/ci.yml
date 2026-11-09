@@ -41,6 +41,23 @@ jobs:
       - run: rustup run ${{ matrix.rust }} cargo test --all-features
       - run: ./run-snapshot-tests.sh
 
+  io-ts:
+    name: io-ts snapshots
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app/langs/io-ts/typecheck
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: app/langs/io-ts/typecheck/package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+
   check-deterministic:
     name: Ensure Deterministic Output
     runs-on: ubuntu-latest

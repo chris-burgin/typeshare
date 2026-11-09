@@ -1,0 +1,14 @@
+[package]
+name = "typeshare-io-ts"
+version = "2.0.0"
+edition = "2021"
+
+description = "io-ts codec generation for typeshare"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/1Password/typeshare"
+
+[dependencies]
+anyhow.workspace = true
+itertools = "0.14.0"
+serde = { version = "1.0.217", features = ["derive"] }
+typeshare-model = { path = "../../model", version = "2.0" }

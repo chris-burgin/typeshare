@@ -731,6 +731,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "typeshare-io-ts"
+version = "2.0.0"
+dependencies = [
+ "anyhow",
+ "itertools",
+ "serde",
+ "typeshare-model",
+]
+
+[[package]]
 name = "typeshare-kotlin"
 version = "2.0.0"
 dependencies = [
@@ -797,6 +807,7 @@ version = "2.0.0"
 dependencies = [
  "log",
  "typeshare-driver",
+ "typeshare-io-ts",
  "typeshare-kotlin",
  "typeshare-swift",
  "typeshare-typescript",

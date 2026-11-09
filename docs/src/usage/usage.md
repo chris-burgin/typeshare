@@ -11,6 +11,7 @@ The currently supported output languages in the 1Password provided Typeshare2 CL
 - Kotlin
 - Typescript
 - Swift
+- io-ts codecs for your Typescript types (see [io-ts Codecs](./io-ts.md))
 
 To generate ffi definitions for a specific target language, run the CLI command for the Typeshare you are using. Specify the directory containing your rust code, the language you would like to generate for, and the file to which your generated definitions will be written. For example, with 1Password's Typeshare CLI:
 
@@ -18,6 +19,7 @@ To generate ffi definitions for a specific target language, run the CLI command 
 typeshare2 ./my_rust_project --lang=kotlin --output-file=my_kotlin_definitions.kt
 typeshare2 ./my_rust_project --lang=swift --output-file=my_swift_definitions.swift
 typeshare2 ./my_rust_project --lang=typescript --output-file=my_typescript_definitions.ts
+typeshare2 ./my_rust_project --lang=io-ts --output-file=my_typescript_codecs.ts
 ```
 
 The first command-line argument is the name of the directory to search for Rust type definitions. The CLI will search all files in the specified directory tree for annotated Rust types. In addition to the input directory, you will also need to specify your desired target language and the output file to which the generated types will be written. This is done with the `--lang` and `--output-file` options respectively.

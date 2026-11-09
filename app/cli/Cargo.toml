@@ -7,6 +7,7 @@ edition = "2021"
 typeshare-typescript = { path = "../langs/typescript" }
 typeshare-kotlin = { path = "../langs/kotlin" }
 typeshare-swift = { path = "../langs/swift" }
+typeshare-io-ts = { path = "../langs/io-ts" }
 typeshare-driver = { path = "../driver" }
 log.workspace = true
 

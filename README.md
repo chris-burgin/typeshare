@@ -91,7 +91,7 @@ Are you getting weird deserialization issues? Did our procedural macro throw a c
 
 ## What about other languages?
 
-The official `typeshare2` binary supports Swift, Kotlin, and Typescript, but there are unofficial implementations out there for other languages. Feel free to add your own to this list (check out the [app](./app/README.md) directory for details on how to create your own typeshare).
+The official `typeshare2` binary supports Swift, Kotlin, and Typescript, plus [io-ts](https://github.com/gcanti/io-ts) codecs for checking your Typescript types at runtime, but there are unofficial implementations out there for other languages. Feel free to add your own to this list (check out the [app](./app/README.md) directory for details on how to create your own typeshare).
 
 - [typeshare-java](https://crates.io/crates/typeshare-java)
 

@@ -1,0 +1,14 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"noEmit": false,
+		"module": "commonjs",
+		"moduleResolution": "node10",
+		"esModuleInterop": true,
+		"rootDir": "../../..",
+		"outDir": "out",
+		"types": ["node"]
+	},
+	"include": ["runtime.test.ts"],
+	"exclude": []
+}

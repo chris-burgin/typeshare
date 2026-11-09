@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"noUnusedLocals": true,
+		"noEmit": true,
+		"skipLibCheck": true,
+		"target": "es2022",
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"types": [],
+		// The snapshots live outside this directory, so point them at its io-ts
+		"paths": {
+			"io-ts": ["./node_modules/io-ts"],
+			"io-ts/*": ["./node_modules/io-ts/*"]
+		}
+	},
+	"include": ["../../../cli/snapshot-tests/*/output.io-ts.ts"],
+	// These inputs reference types they never define, so their typescript
+	// snapshots don't compile either
+	"exclude": [
+		"../../../cli/snapshot-tests/can_generate_generic_enum/*",
+		"../../../cli/snapshot-tests/can_generate_slice_of_user_type/*",
+		"../../../cli/snapshot-tests/serialize_field_as/*"
+	]
+}
