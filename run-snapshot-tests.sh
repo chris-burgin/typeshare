@@ -31,6 +31,7 @@ declare -A languages=(
     ["swift"]=".swift"
     ["typescript"]=".ts"
     ["kotlin"]=".kt"
+    ["io-ts"]=".io-ts.ts"
 )
 
 cargo build --release --all-targets --bin typeshare2 && \

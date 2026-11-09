@@ -5,6 +5,7 @@ struct OverrideStruct {
     #[typeshare(
         swift(type = "Int"),
         typescript(readonly, type = "any | undefined"),
+        io_ts(type = "t.unknown"),
         kotlin(type = "Int"), go(type = "uint"),
         scala(type = "Short")
     )]
@@ -21,6 +22,7 @@ enum OverrideEnum {
         #[typeshare(
             swift(type = "Int"),
             typescript(readonly, type = "any | undefined"),
+            io_ts(type = "t.unknown"),
             kotlin(type = "Int"), go(type = "uint"),
             scala(type = "Short")
         )]

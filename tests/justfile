@@ -12,7 +12,10 @@ determinism: clean generate-determinism-files
     mkdir -p out
     cargo run --bin typeshare2 -- -l typescript -o "out/output1.ts" input
     cargo run --bin typeshare2 -- -l typescript -o "out/output2.ts" input
-    diff -q out/*.ts
+    diff -q out/output1.ts out/output2.ts
+    cargo run --bin typeshare2 -- -l io-ts -o "out/codecs1.ts" input
+    cargo run --bin typeshare2 -- -l io-ts -o "out/codecs2.ts" input
+    diff -q out/codecs1.ts out/codecs2.ts
 
 clean:
     rm -rf out

@@ -5,6 +5,15 @@ no-version-header = true
 Url = "string"
 DateTime = "string"
 
+[io-ts]
+no-version-header = true
+# Snapshots import their types from the typescript snapshot next to them
+types-import = "./output"
+
+[io-ts.type_mappings]
+Url = "t.string"
+DateTime = "t.string"
+
 [kotlin]
 package = "com.agilebits.onepassword"
 no-version-header = true

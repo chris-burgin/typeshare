@@ -8,4 +8,5 @@
   - [Annotations](./usage/annotations.md)
   - [Configuration](./usage/configuration.md)
   - [Target OS](./usage/target_os.md)
+  - [io-ts Codecs](./usage/io-ts.md)
 - [Contributing](./contributing.md)
